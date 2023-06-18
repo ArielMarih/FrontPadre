@@ -1,0 +1,89 @@
+.indexText span{
+    font-weight: 900;
+    font-size: 50px;
+    color: black;
+  }
+  .indexText{
+    width: 10cm;
+    flex: 1;
+  }
+  .index{
+    padding: 150px 150px;
+    display: flex;
+  }
+  .index p{
+    font-size: larger
+  }
+  .indexImage{
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    flex:1;
+  }
+  .us{
+    background-color: #dc3545;
+  }
+  .us img{
+    flex: 1;
+    clip-path: polygon(97% 0, 100% 49%, 95% 100%, 0% 100%, 0 45%, 0% 0%);
+  }
+  .usText{
+    flex: 1;
+    color: white;
+    font-size: larger;
+    text-align: center;
+    padding: 70px 70px;
+  }
+  .usText span{
+    font-weight: 700;
+    font-size: 50px;
+    color: black;
+  }
+  
+  .contact img{
+    flex: 1;
+    clip-path: polygon(100% 0, 100% 49%, 100% 100%, 4% 100%, 0 45%, 6% 0);
+  }
+  
+  .contactText{
+    flex: 1;
+    color: black;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+    padding: 70px 70px;
+  }
+  .contactText span{
+    font-weight: 700;
+    font-size: 50px;
+    color: black;
+  }
+  
+  .contact img{
+    flex: 1;
+    clip-path: polygon(100% 0, 100% 49%, 100% 100%, 4% 100%, 0 45%, 6% 0);
+  }
+  @media (max-width: 1133px) and (min-width: 0px) {
+    .index{
+      display: block;
+      text-align: center;
+      padding: 0px 0px;
+      margin-bottom: 20px;
+    }
+    .indexText{
+      width: auto;
+    }
+    .indexText img{
+      display: none;
+    }
+    .indexImage{
+      width: 600px;
+      clip-path: polygon(100% 0, 100% 46%, 100% 100%, 0 100%, 0 66%, 0 0);
+      border-radius: 100%;
+      text-align: center;
+    }
+    .us img{
+      display: none;
+    }
+    .contact img{
+      display: none;
+    }
+  }

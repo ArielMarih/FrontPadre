@@ -1,0 +1,62 @@
+<div class="main">
+    <div class="sidebar" [ngClass]="{'sidebar-hidden': sidebarHidden}">
+        <img src="../../../assets/images/logo.png" alt="">
+        <ul class="mt-4">
+            <li class="mb-2">
+                <a href="#" routerLink="/home" routerLinkActive="active">Inicio</a>
+             </li>
+             <hr>
+             <li class="mb-2">
+                <a href="#">Maquinas de ejercicios</a>
+             </li>
+             <hr>
+
+             <li class="mb-2">
+                <a href="#">Circuitos de ejercicios</a>
+             </li>
+             <hr>
+
+             <li class="mb-2">
+                <a href="#">Modulares</a>
+             </li>
+             <hr>
+
+             <li class="mb-2">
+                <a href="#">Tradicionales</a>
+             </li>
+             <hr>
+
+             <li class="mb-2">
+                <a href="#">Toboganes acuaticos</a>
+             </li>
+             <hr>
+
+             <li class="mb-2">
+                <a href="#">Mob. Urbano</a>
+             </li>
+             <hr>
+
+             <li class="mb-2">
+                <a href="#">Accesorios</a>
+             </li>
+             <hr>
+
+             <li class="mb-2">
+                <a href="#">Estructuras</a>
+             </li>
+             <hr>
+
+        </ul>
+    </div>
+    <div class="base" [ngClass]="{'base-full': sidebarHidden}">
+        <div class="navbar">
+         <button type="button" class="btn btn-dark btn-lg" (click)="sidebarHiddenFunction()">
+            <i class="fa fa-bars"></i>
+         </button>
+
+        </div>
+        <div class="content">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
